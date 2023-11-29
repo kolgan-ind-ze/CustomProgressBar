@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/showProgressCustomPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Прогресс кастома"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCustom"
+        style="@style/CustomStyleProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/showProgressCustomPB"
+        app:layout_constraintStart_toStartOf="@+id/showProgressCustomPB"
+        app:layout_constraintTop_toBottomOf="@+id/showProgressCustomPB" />
+
+    <TextView
+        android:id="@+id/showProgressStandartPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Прогресс стандарта"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarCustom"
+        app:layout_constraintStart_toStartOf="@+id/progressBarCustom"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarCustom" />
+
+    <ProgressBar
+        android:id="@+id/progressBarStandart"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/showProgressStandartPB"
+        app:layout_constraintStart_toStartOf="@+id/showProgressStandartPB"
+        app:layout_constraintTop_toBottomOf="@+id/showProgressStandartPB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
